@@ -19,7 +19,6 @@ bot = commands.Bot(command_prefix="/", intents=discord.Intents.all())
 @bot.event
 async def on_ready():
     try:
-        # bot.recursively_remove_all_commands()
         synced = await bot.tree.sync()
         logger.info(f"Synced: {len(synced)} command's")
     except Exception as e:
