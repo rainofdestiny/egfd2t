@@ -82,7 +82,7 @@ async def on_message(message):
                     embed=Embed(
                         color=15548997,
                         title="Ошибка авторизации",
-                        description="Для привязки Telegram аккаунта отправьте команду /auth.",
+                        description="Для привязки Telegram аккаунта отправьте команду /link.",
                     )
                 )
             case 404:
